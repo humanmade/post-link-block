@@ -1,0 +1,17 @@
+.post-link {
+	display: inline-block;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+
+		.wp-block-cover__background.has-background-dim.has-background-dim-0 {
+			transition: opacity;
+			opacity: 0.3;
+		}
+
+		.wp-block-post-title {
+			text-decoration: underline;
+		}
+	}
+}
