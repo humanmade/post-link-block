@@ -28,9 +28,11 @@ This plugin provides a single **Post Link** block that renders its inner blocks 
 ## Usage
 
 1. Add a **Query Loop** block to your page
-2. Inside the loop, add the **Post Link** block
-3. Add inner blocks inside Post Link (e.g. Post Featured Image, Post Title, Post Excerpt)
-4. On the front-end, the entire inner content is wrapped in a link to the post
+2. Inside the **Post Template**, insert the **Post Link** block
+3. Add inner blocks inside Post Link — for example, Featured Image, Title, and Post Date
+4. On the front-end, the entire inner content is wrapped in a single link to the post
+
+![Screenshot of the block editor List View showing a Post Link block containing Featured Image, Title, and Post Date blocks, nested inside a Query Loop](./screenshot.png)
 
 **Note:** The block only renders a link when a `postId` is available from context. Outside a Query Loop it will fall back to `get_the_ID()`, but it is primarily intended for use within query loops.
 
