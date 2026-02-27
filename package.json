@@ -22,8 +22,8 @@
 	},
 	"homepage": "https://humanmade.com",
 	"engines": {
-		"node": ">=18.0.0",
-		"npm": ">=8.0.0"
+		"node": ">=24.0.0",
+		"npm": ">=11.0.0"
 	},
 	"devDependencies": {
 		"@humanmade/block-editor-components": "^0.10.0",
