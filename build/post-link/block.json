@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hm/post-link",
+  "version": "1.0.0",
+  "title": "Post Link",
+  "category": "design",
+  "icon": "admin-links",
+  "description": "Renders a link to the current post in a query loop with semantic markup",
+  "keywords": [
+    "link",
+    "post",
+    "query",
+    "loop"
+  ],
+  "textdomain": "post-link-block",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "align": false,
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontWeight": true
+    },
+    "customClassName": true,
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
